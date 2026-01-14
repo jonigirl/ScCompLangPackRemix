@@ -9,7 +9,7 @@
 
 > [!IMPORTANT]
 > **Major Update (v4.5.0+):**
-> I have completely changed how I gather data for this remix. Instead of relying on external sources or just text descriptions, I am now extracting functional data **directly from the Star Citizen game files**. This shift allows me to include detailed, real-time tracking info for **Missiles, Torpedoes, and Bombs** that wasn't possible before.
+> Since I no longer have to struggle parsing data from multiple sources, it's much harder to accidentally "cross the streams", so i've added missiles and torpedos in scope of this remix. I've left ship weapons out for now still, but let me know if you have ideas around them.
 
 ## 💡 Why Did I Make This?
 
