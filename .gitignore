@@ -1,5 +1,4 @@
-
-__pycache__/
-*.pyc
-.vscode/
-.idea/
+extracted/
+extracted_live/
+dry_run_manifest.csv
+*.txt
