@@ -28,6 +28,11 @@ When a new Star Citizen patch is released, follow these steps:
 - Commit to a feature branch → Merge to `main`.
 - Push to GitHub and create a Release/Pre-release.
 
+### 5. Cleanup (Crucial)
+- **Nuke Temporary Data**: The `extracted_[version]` folders can reach 5GB+. 
+- **Command**: `Remove-Item -Path "extracted_*" -Recurse -Force`
+- **Why?**: The manifest CSV/MD files are the permanent record; the raw XMLs are just for the run.
+
 ## 🧪 Requirements
 - Avoid using complex text editing tools on the 9MB `global.ini`; always use specific Python processing scripts to avoid truncation or encoding errors.
 - Always use `utf-8-sig` when reading/writing Star Citizen INI files.

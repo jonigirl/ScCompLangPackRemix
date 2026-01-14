@@ -1,4 +1,5 @@
 extracted/
 extracted_live/
-dry_run_manifest.csv
+extracted_ptu/
+dry_run_manifest*.csv
 *.txt
