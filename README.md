@@ -8,8 +8,8 @@
 > This remix was created using [Claude Code](https://claude.com/claude-code) to provide an alternative compact naming format.
 
 > [!IMPORTANT]
-> **Major Architecture Update (v4.5.0+):**
-> We have revolutionized how data is gathered! Instead of relying solely on text descriptions, we now extract **functional data directly from game XMLs**. This allows us to provide real-time information for **Missiles, Torpedoes, and Bombs** that was previously hidden or generic.
+> **Major Update (v4.5.0+):**
+> I have completely changed how I gather data for this remix. Instead of relying on external sources or just text descriptions, I am now extracting functional data **directly from the Star Citizen game files**. This shift allows me to include detailed, real-time tracking info for **Missiles, Torpedoes, and Bombs** that wasn't possible before.
 
 ## 💡 Why Did I Make This?
 
