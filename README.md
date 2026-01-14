@@ -1,7 +1,7 @@
 # ⚙️ Component Language Pack - Remix Edition
 
-![GitHub release (latest by date)](https://img.shields.io/github/v/release/joeydee1986/ScCompLangPackRemix)
-![GitHub all releases](https://img.shields.io/github/downloads/joeydee1986/ScCompLangPackRemix/total)
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/BeltaKoda/ScCompLangPackRemix)
+![GitHub all releases](https://img.shields.io/github/downloads/BeltaKoda/ScCompLangPackRemix/total)
 
 > **📢 IMPORTANT:** This is a modified fork of the original [Component Language Pack by ExoAE](https://github.com/ExoAE/ScCompLangPack).
 > **All credit for the original language pack goes to [ExoAE](https://github.com/ExoAE).**
