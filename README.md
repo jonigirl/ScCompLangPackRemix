@@ -7,6 +7,10 @@
 > **All credit for the original language pack goes to [ExoAE](https://github.com/ExoAE).**
 > This remix was created using [Claude Code](https://claude.com/claude-code) to provide an alternative compact naming format.
 
+> [!IMPORTANT]
+> **Major Architecture Update (v4.5.0+):**
+> We have revolutionized how data is gathered! Instead of relying solely on text descriptions, we now extract **functional data directly from game XMLs**. This allows us to provide real-time information for **Missiles, Torpedoes, and Bombs** that was previously hidden or generic.
+
 ## 💡 Why Did I Make This?
 
 > [!NOTE]
@@ -44,6 +48,24 @@ The format is: **[Type][Size][Quality] [Component Name]**
 - `AbsoluteZero` → `R2B AbsoluteZero` (Racing, Size 2, Quality B)
 - `NightFall` → `S2A NightFall` (Stealth, Size 2, Quality A)
 
+## 🚀 Expanded Scope: Ordnance (v4.5.0+)
+
+Starting with patch 4.5.0, we have expanded the scope to include missiles, torpedoes, and bombs with highly informative functional tags.
+
+### Functional Ordnance Tags:
+- **IR** = Infrared Tracking
+- **EM** = Electromagnetic Tracking
+- **CS** = Cross-Section Tracking
+- **B** = Bomb
+
+### Examples:
+- `Marksman I Missile` → **`IR Marksman I Missile`**
+- `Seeker IX Torpedo` → **`EM Seeker IX Torpedo`**
+- `Colossus Bomb` → **`B10 Colossus Bomb`**
+
+> [!TIP]
+> **MFD Ready!** These tags are also applied to the "short" names used on your ship's MFD screens (e.g., `CS StrkFrc II`), giving you critical combat info at a glance.
+
 ## ⬇️ Download and install
 
 **Download the latest version from the [Releases Page](https://github.com/joeydee1986/ScCompLangPackRemix/releases)**
@@ -71,9 +93,10 @@ This tool was created to make building this language pack easier, and it's now a
 This repository includes a suite of automation tools to streamline the update process for new Star Citizen patches.
 
 **Key Features:**
-*   **Automated Extraction:** Extracts component data directly from `Data.p4k`.
+*   **Automated Extraction:** Extracts component data directly from `Data.p4k` using custom P4K and DCB parsing tools.
+*   **XML Data Mining:** Drills into individual item XMLs to verify tracking types (IR/EM/CS) and authentic manufacturer data.
 *   **Intelligent Auditing:** Scans the game data to identify component types (Military, Civilian, etc.) even when not explicitly labeled.
-*   **Auto-Fixing:** Automatically applies the naming convention (e.g., `M2A`) to the `global.ini`.
+*   **Auto-Fixing:** Automatically applies the naming convention to both the full and "short" (MFD) localization strings.
 
 **How to Run:**
 See [AGENT_INSTRUCTIONS.md](AGENT_INSTRUCTIONS.md) for detailed usage instructions.
