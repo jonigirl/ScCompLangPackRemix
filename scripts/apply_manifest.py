@@ -114,7 +114,15 @@ def main():
 
     # 3. Apply Branding
     print(f"Applying branding: {BRANDING_VERSION}")
-    final_data["Frontend_PU_Version"] = BRANDING_VERSION
+    # Update both the plain key and the ,P variant if they exist
+    branding_found = False
+    for k in list(final_data.keys()):
+        if k.startswith("Frontend_PU_Version"):
+            final_data[k] = BRANDING_VERSION
+            branding_found = True
+    
+    if not branding_found:
+        final_data["Frontend_PU_Version"] = BRANDING_VERSION
 
     # 4. Save final INI
     print(f"Saving remixed INI to {OUTPUT_INI}...")
