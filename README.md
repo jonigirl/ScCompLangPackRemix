@@ -1,6 +1,7 @@
 # ⚙️ Component Language Pack - Remix Edition
 
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/BeltaKoda/ScCompLangPackRemix)
+![GitHub pre-release (latest by date)](https://img.shields.io/github/v/release/BeltaKoda/ScCompLangPackRemix?include_prereleases&label=pre-release&color=orange)
 ![GitHub all releases](https://img.shields.io/github/downloads/BeltaKoda/ScCompLangPackRemix/total)
 
 > **📢 IMPORTANT:** This is a modified fork of the original [Component Language Pack by ExoAE](https://github.com/ExoAE/ScCompLangPack).
