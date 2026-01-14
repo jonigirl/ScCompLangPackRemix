@@ -77,6 +77,10 @@ def main():
             key = row['key']
             if key in components: continue # Deduplicate
             
+            # Exclusion logic for ship weapons and turrets
+            if row['type'] in ["WeaponGun", "Turret", "TurretBase"]:
+                continue
+            
             stock_name = stock_data.get(key, "N/A")
             ptu_name = ptu_data.get(key, "N/A")
             

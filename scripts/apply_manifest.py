@@ -81,26 +81,35 @@ def main():
         reader = csv.DictReader(f)
         for row in reader:
             key = row['key']
+            # Exclusion logic for ship weapons and turrets
+            if row['type'] in ["WeaponGun", "Turret", "TurretBase"]:
+                continue
+
             stock_name = stock_data.get(key)
             if not stock_name: continue
             
             ptu_name = ptu_data.get(key)
-            
-            # 1. Check if we already have a verified remix in PTU
-            # We consider it verified if it has a prefix [A-Z]{1,4}[0-9]
-            # EXCEPT for ordnance, where we want to apply the NEW functional logic anyway.
             is_ordnance = row['type'] in ["Missile", "Torpedo", "Bomb"]
             
+            # Derive prefix for any item meeting the criteria
+            c_class = get_class_from_desc(key, stock_data)
+            tracking = row.get('tracking', 'N/A')
+            prefix = get_prefix(row['type'], row['size'], row['grade'], c_class, tracking)
+
             if ptu_name and ptu_name != stock_name and not is_ordnance:
                 # Use the verified PTU remix for standard components
                 final_data[key] = ptu_name
                 counts["Verified"] += 1
             else:
-                # 2. Derive new name for Ordnance or new items
-                c_class = get_class_from_desc(key, stock_data)
-                tracking = row.get('tracking', 'N/A')
-                prefix = get_prefix(row['type'], row['size'], row['grade'], c_class, tracking)
+                # 2. Apply functional names to Main and Short names for Ordnance
                 final_data[key] = f"{prefix} {stock_name}"
+                
+                if is_ordnance:
+                    short_key = f"{key}_short"
+                    if short_key in stock_data:
+                        stock_short = stock_data[short_key]
+                        final_data[short_key] = f"{prefix} {stock_short}"
+                
                 counts["New/Ordnance"] += 1
 
     # 3. Apply Branding
