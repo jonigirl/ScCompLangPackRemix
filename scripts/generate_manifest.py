@@ -42,14 +42,16 @@ def get_prefix(c_type, size, grade, c_class, tracking):
     grade_map = {"1": "A", "2": "B", "3": "C", "4": "D"}
     prefix_grade = grade_map.get(grade, "A")
 
-    if c_type in ["Missile", "Torpedo"]:
+    if c_type in ["Missile", "Torpedo", "GroundMissile"]:
         track_map = {
             "Infrared": "IR",
             "Electromagnetic": "EM",
             "CrossSection": "CS"
         }
-        # Finalized: Just the tracking type, no size or grade (roman numerals already in name)
-        return track_map.get(tracking, "MSL")
+        track_prefix = track_map.get(tracking, "MSL")
+        if c_type == "GroundMissile":
+            return f"G-{track_prefix}"
+        return track_prefix
     
     if c_type == "Bomb":
         # Finalized: B[Size], no grade
@@ -123,6 +125,37 @@ def main():
         f.write("| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n")
         for c in sorted_comps:
             f.write(f"| {c['Type']} | {c['Size']} | {c['Grade']} | {c['Tracking']} | {c['Class']} | {c['Stock']} | **{c['Proposed']}** | {c['Status']} |\n")
+
+    # Append Ground Missiles (GMISL) if any were found in INI but not in manifest
+    print("Synching GMISL from INI...")
+    g_missiles = []
+    for key in stock_data:
+        if key.startswith("item_NameGMISL_") and not key.endswith("_short"):
+            if key in components: continue
+            
+            tracking = "N/A"
+            if "_IR_" in key: tracking = "Infrared"
+            elif "_EM_" in key: tracking = "Electromagnetic"
+            elif "_CS_" in key: tracking = "CrossSection"
+            
+            size_match = re.search(r'_S(\d+)_', key)
+            size = size_match.group(1) if size_match else "0"
+            
+            prefix = get_prefix("GroundMissile", size, "1", "Unknown", tracking)
+            stock_name = stock_data[key]
+            
+            g_missiles.append({
+                "Type": "GroundMissile", "Size": size, "Grade": "1", "Tracking": tracking,
+                "Class": "Unknown", "Stock": stock_name, "Proposed": f"{prefix} {stock_name}", "Status": "NEW (INI ONLY)"
+            })
+    
+    if g_missiles:
+        with open(OUTPUT_MD, 'a', encoding='utf-8') as f:
+            f.write("\n### Ground-Based Ordnance (Synthetic from INI)\n\n")
+            f.write("| Type | S | G | Tracking | Class | Stock Name | Proposed Remix | Status |\n")
+            f.write("| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n")
+            for c in sorted(g_missiles, key=lambda x: (x['Size'], x['Stock'])):
+                f.write(f"| {c['Type']} | {c['Size']} | {c['Grade']} | {c['Tracking']} | {c['Class']} | {c['Stock']} | **{c['Proposed']}** | {c['Status']} |\n")
 
     print(f"Generated manifest with {len(sorted_comps)} unique items.")
 

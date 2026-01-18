@@ -356,3 +356,29 @@ Missiles and Torpedoes now use functional prefixes (**IR/EM/CS**) and Bombs use 
 | WeaponMining | 2 | 1 | N/A | Unknown | Impact II Mining Laser | **C2A Impact II Mining Laser** | VERIFIED |
 | WeaponMining | 2 | 1 | N/A | Unknown | Klein-S2 Mining Laser | **C2A Klein-S2 Mining Laser** | VERIFIED |
 | WeaponMining | 2 | 1 | N/A | Unknown | Lancet MH2 Mining Laser | **C2A Lancet MH2 Mining Laser** | VERIFIED |
+
+### Ground-Based Ordnance (Synthetic from INI)
+
+| Type | S | G | Tracking | Class | Stock Name | Proposed Remix | Status |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| GroundMissile | 01 | 1 | Infrared | Unknown | Marksman I-G Missile | **G-IR Marksman I-G Missile** | NEW (INI ONLY) |
+| GroundMissile | 01 | 1 | Electromagnetic | Unknown | Pioneer I-G Missile | **G-EM Pioneer I-G Missile** | NEW (INI ONLY) |
+| GroundMissile | 01 | 1 | CrossSection | Unknown | Spark I-G Missile | **G-CS Spark I-G Missile** | NEW (INI ONLY) |
+| GroundMissile | 01 | 1 | Electromagnetic | Unknown | TaskForce I-G Missile | **G-EM TaskForce I-G Missile** | NEW (INI ONLY) |
+| GroundMissile | 02 | 1 | Electromagnetic | Unknown | Dominator II-G Missile | **G-EM Dominator II-G Missile** | NEW (INI ONLY) |
+| GroundMissile | 02 | 1 | Infrared | Unknown | Ignite II-G Missile | **G-IR Ignite II-G Missile** | NEW (INI ONLY) |
+| GroundMissile | 02 | 1 | CrossSection | Unknown | StrikeForce II Missile | **G-CS StrikeForce II Missile** | NEW (INI ONLY) |
+| GroundMissile | 02 | 1 | CrossSection | Unknown | Tempest II-G Missile | **G-CS Tempest II-G Missile** | NEW (INI ONLY) |
+| GroundMissile | 03 | 1 | CrossSection | Unknown | Arrester III-G Missile | **G-CS Arrester III-G Missile** | NEW (INI ONLY) |
+| GroundMissile | 03 | 1 | Electromagnetic | Unknown | Thunderbolt III-G Missile | **G-EM Thunderbolt III-G Missile** | NEW (INI ONLY) |
+| GroundMissile | 03 | 1 | Infrared | Unknown | Viper III-G Missile | **G-IR Viper III-G Missile** | NEW (INI ONLY) |
+| GroundMissile | 04 | 1 | CrossSection | Unknown | Assailant IV-G Missile | **G-CS Assailant IV-G Missile** | NEW (INI ONLY) |
+| GroundMissile | 04 | 1 | Infrared | Unknown | Pathfinder IV-G Missile | **G-IR Pathfinder IV-G Missile** | NEW (INI ONLY) |
+| GroundMissile | 05 | 1 | Electromagnetic | Unknown | Reaper V-G Missile | **G-EM Reaper V-G Missile** | NEW (INI ONLY) |
+| GroundMissile | 05 | 1 | Electromagnetic | Unknown | Scimitar V-G Missile | **G-EM Scimitar V-G Missile** | NEW (INI ONLY) |
+| GroundMissile | 05 | 1 | CrossSection | Unknown | Stalker V-G Missile | **G-CS Stalker V-G Missile** | NEW (INI ONLY) |
+| GroundMissile | 05 | 1 | Infrared | Unknown | Valkyrie V-G Missile | **G-IR Valkyrie V-G Missile** | NEW (INI ONLY) |
+| GroundMissile | 07 | 1 | Infrared | Unknown | Hellion VII-G Missile | **G-IR Hellion VII-G Missile** | NEW (INI ONLY) |
+| GroundMissile | 09 | 1 | CrossSection | Unknown | Argos IX-G Torpedo | **G-CS Argos IX-G Torpedo** | NEW (INI ONLY) |
+| GroundMissile | 09 | 1 | Electromagnetic | Unknown | Seeker IX-G Torpedo | **G-EM Seeker IX-G Torpedo** | NEW (INI ONLY) |
+| GroundMissile | 09 | 1 | Infrared | Unknown | Typhoon IX-G Torpedo | **G-IR Typhoon IX-G Torpedo** | NEW (INI ONLY) |
