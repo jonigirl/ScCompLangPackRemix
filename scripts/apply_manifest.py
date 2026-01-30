@@ -5,12 +5,12 @@ from pathlib import Path
 
 # Config
 REPO_ROOT = Path("c:/Github/ScCompLangPackRemix")
-STOCK_INI = REPO_ROOT / "4.6.0" / "PTU" / "stock-global.ini"
-PTU_REMIX = REPO_ROOT / "4.5.0" / "LIVE" / "data/Localization/english/global.ini"
+STOCK_INI = REPO_ROOT / "4.6.0" / "LIVE" / "stock-global.ini"
+PTU_REMIX = REPO_ROOT / "4.6.0" / "PTU" / "data/Localization/english/global.ini"
 MANIFEST_CSV = REPO_ROOT / "dry_run_manifest_ptu.csv"
-OUTPUT_INI = REPO_ROOT / "4.6.0" / "PTU" / "data" / "Localization" / "english" / "global.ini"
+OUTPUT_INI = REPO_ROOT / "4.6.0" / "LIVE" / "data" / "Localization" / "english" / "global.ini"
 
-BRANDING_VERSION = "4.6.0 - PTU - BeltaKoda's ScCompLangPackRemix"
+BRANDING_VERSION = "4.6.0 - LIVE - BeltaKoda's ScCompLangPackRemix"
 
 def load_ini(path):
     data = {}
