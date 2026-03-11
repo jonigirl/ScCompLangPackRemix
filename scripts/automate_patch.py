@@ -30,7 +30,7 @@ def run_step(script_name: str, description: str, args: list) -> bool:
     print(f"STEP: {description}")
     print(f"{'='*60}")
     
-    script_path = REPO_ROOT\"scripts"\script_name
+    script_path = D:\GitHub\ScCompLangPackRemix\scripts\script_name
     if not script_path.exists():
         print(f"Error: Script {script_name} not found at {script_path}!")
         return False
