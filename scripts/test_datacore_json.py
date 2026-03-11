@@ -9,7 +9,7 @@ except ImportError as e:
     sys.exit(1)
 
 # Configuration
-sc_path = r"C:\Program Files\Roberts Space Industries\StarCitizen\LIVE"
+sc_path = r"E:\Roberts Space Industries\StarCitizen\LIVE"
 
 def main():
     print(f"Initializing StarCitizen at {sc_path}...")

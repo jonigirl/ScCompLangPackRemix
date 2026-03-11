@@ -7,8 +7,8 @@ from typing import Dict, List, Optional
 import re
 
 # Configuration
-SC_INSTALL_PATH = r"C:\Program Files\Roberts Space Industries\StarCitizen\LIVE"
-REPO_ROOT = Path("c:/Github/ScCompLangPackRemix")
+SC_INSTALL_PATH = r"e:\Roberts Space Industries\StarCitizen\LIVE"
+REPO_ROOT = Path("d:/Github/ScCompLangPackRemix")
 TOOLS_DIR = REPO_ROOT / "tools"
 EXTRACT_DIR = REPO_ROOT / "extracted_live"
 UNP4K_EXE = TOOLS_DIR / "unp4k.exe"

@@ -1,7 +1,7 @@
 
 import os
 
-file_path = r"c:\Github\ScCompLangPackRemix\4.4.0\PTU\data\Localization\english\global.ini"
+file_path = r"d:\Github\ScCompLangPackRemix\4.4.0\PTU\data\Localization\english\global.ini"
 
 print(f"Reading {file_path}...")
 

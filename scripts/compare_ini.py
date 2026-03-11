@@ -65,6 +65,6 @@ def compare_inis(ptu_path, live_path):
         print(f"  - {k}")
 
 if __name__ == "__main__":
-    ptu_file = r"C:\SCExtractor\StockGlobal-4-5-0-PTU.ini"
-    live_file = r"C:\SCExtractor\StockGlobal-4-5-0-LIVE.ini"
+    ptu_file = r"D:\GitHub\ScCompLangPackRemix/4.7.0/PTU/stock-global.ini"
+    live_file = r"D:\GitHub\ScCompLangPackRemix/4.6.0/LIVE/stock-global.ini"
     compare_inis(ptu_file, live_file)

@@ -9,12 +9,12 @@ except ImportError as e:
     sys.exit(1)
 
 # Configuration
-REPO_ROOT = r"c:\Github\ScCompLangPackRemix"
+REPO_ROOT = r"d:\Github\ScCompLangPackRemix"
 # Known SC install paths to check
 SC_PATHS = [
     r"C:\Program Files\Roberts Space Industries\StarCitizen",
     r"D:\Program Files\Roberts Space Industries\StarCitizen",
-    r"E:\Program Files\Roberts Space Industries\StarCitizen",
+    r"E:\Roberts Space Industries\StarCitizen",
 ]
 
 def find_sc_install():

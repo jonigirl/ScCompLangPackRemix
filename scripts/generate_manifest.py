@@ -4,9 +4,9 @@ import re
 from pathlib import Path
 
 # Config
-REPO_ROOT = Path("c:/Github/ScCompLangPackRemix")
+REPO_ROOT = Path("d:/Github/ScCompLangPackRemix")
 STOCK_INI = REPO_ROOT / "4.6.0" / "LIVE" / "stock-global.ini"
-PTU_REMIX = REPO_ROOT / "4.6.0" / "PTU" / "data/Localization/english/global.ini"
+PTU_REMIX = REPO_ROOT / "4.7.0" / "PTU" / "data/Localization/english/global.ini"
 MANIFEST_CSV = REPO_ROOT / "dry_run_manifest_ptu.csv"
 OUTPUT_MD = REPO_ROOT / "component_manifest_4.6.0_live.md"
 

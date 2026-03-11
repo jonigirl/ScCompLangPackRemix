@@ -22,7 +22,7 @@ import tempfile
 from pathlib import Path
 
 # Configuration
-SC_INSTALL_PATH = r"C:\Program Files\Roberts Space Industries\StarCitizen\LIVE"
+SC_INSTALL_PATH = r"d:\Roberts Space Industries\StarCitizen\LIVE"
 REPO_ROOT = Path(__file__).parent.parent
 
 def run_step(script_name: str, description: str, args: list) -> bool:

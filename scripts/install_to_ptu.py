@@ -5,7 +5,7 @@ from pathlib import Path
 # Configuration
 SOURCE_FILE = Path(r"4.5.0/PTU/data/Localization/english/global.ini")
 # Standard PTU location
-PTU_INSTALL_PATH = Path(r"C:\Program Files\Roberts Space Industries\StarCitizen\PTU")
+PTU_INSTALL_PATH = Path(r"E:\Roberts Space Industries\StarCitizen\PTU")
 
 def install_ptu():
     print("Installing global.ini to PTU...")
