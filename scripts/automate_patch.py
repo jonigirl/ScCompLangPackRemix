@@ -23,8 +23,7 @@ from pathlib import Path
 
 # Configuration
 SC_INSTALL_PATH = r"e:\Roberts Space Industries\StarCitizen\LIVE"
-REPO_ROOT = Path(__file__).parent.parent
-
+REPO_ROOT = d:\github\ScCompLangPackRemix_
 def run_step(script_name: str, description: str, args: list) -> bool:
     """Run a python script as a subprocess with arguments."""
     print(f"\n{'='*60}")
