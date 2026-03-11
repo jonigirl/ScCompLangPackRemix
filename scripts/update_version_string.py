@@ -1,7 +1,7 @@
 import sys
 import os
 
-file_path = r"4.5.0/PTU/data/Localization/english/global.ini"
+file_path = r"4.7.0/PTU/data/Localization/english/global.ini"
 # The target string as identified by Select-String
 target_substring = "Frontend_PU_Version=4.7.0 - ScCompLangPackRemix"
 replacement_string = "Frontend_PU_Version=4.7.0 - Crafting and INventory Gameplay PTU - ScCompLangPackRemix"

@@ -9,7 +9,7 @@ except ImportError as e:
     sys.exit(1)
 
 # Configuration
-REPO_ROOT = r"d:\Github\ScCompLangPackRemix"
+REPO_ROOT = r"e:\Github\ScCompLangPackRemix"
 # Known SC install paths to check
 SC_PATHS = [
     r"C:\Program Files\Roberts Space Industries\StarCitizen",

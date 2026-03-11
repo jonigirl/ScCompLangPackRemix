@@ -15,7 +15,7 @@ import re
 
 # Configuration
 # Configuration
-SC_INSTALL_PATH = r"d:\Program Files\Roberts Space Industries\StarCitizen\LIVE"
+SC_INSTALL_PATH = r"d:Roberts Space Industries\StarCitizen\LIVE"
 REPO_ROOT = Path(__file__).parent.parent
 TOOLS_DIR = REPO_ROOT / "tools"
 EXTRACT_DIR = REPO_ROOT / "extracted"
