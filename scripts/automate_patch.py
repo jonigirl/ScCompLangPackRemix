@@ -23,14 +23,14 @@ from pathlib import Path
 
 # Configuration
 SC_INSTALL_PATH = r"e:\Roberts Space Industries\StarCitizen\LIVE"
-REPO_ROOT = r"d:\github\ScCompLangPackRemix"
+REPO_ROOT = r"d:\Github\ScCompLangPackRemix"
 def run_step(script_name: str, description: str, args: list) -> bool:
     """Run a python script as a subprocess with arguments."""
     print(f"\n{'='*60}")
     print(f"STEP: {description}")
     print(f"{'='*60}")
     
-    script_path = REPO_ROOT \scripts\"script_name"
+    script_path = REPO_ROOT scripts \ "script_name"
     if not script_path.exists():
         print(f"Error: Script {script_name} not found at {script_path}!")
         return False
